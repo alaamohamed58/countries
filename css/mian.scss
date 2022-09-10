@@ -2,7 +2,6 @@
 body {
   font-family: sans-serif;
 }
-
 .search__bar {
   width: 250px;
   margin: 30px auto;
@@ -61,4 +60,15 @@ section {
       }
     }
   }
+}
+#btn {
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: orange;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
 }

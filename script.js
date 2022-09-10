@@ -1,6 +1,7 @@
 const section = document.querySelector("section");
 (searchBar = document.getElementById("search-bar")),
-  (submitBtn = document.querySelector("input[type = 'image' ]"));
+  (submitBtn = document.querySelector("input[type = 'image' ]")),
+  (locationBtn = document.getElementById("btn"));
 
 //render the element
 const render = (data) => {
@@ -57,3 +58,9 @@ function getCountry(country) {
       section.style.opacity = "1";
     });
 }
+
+locationBtn.addEventListener("click", () => {
+  getJSON("http://ipwho.is/").then((data) => {
+    getCountry(data.country);
+  });
+});

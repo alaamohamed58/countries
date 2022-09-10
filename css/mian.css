@@ -81,4 +81,18 @@ section article .content > div span {
   display: inline-block;
   margin-left: 10px;
 }
+
+#btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: orange;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
 /*# sourceMappingURL=mian.css.map */
